@@ -12,7 +12,7 @@ services:
       - "${PORT:-8004}:8004"
     volumes:
       # Mount local config file for persistence
-      - ./config.yaml:/app/config.yaml
+      - ./config.yaml:/config/config.yaml
       # Mount local directories for persistent app data
       - ./voices:/app/voices
       - ./reference_audio:/app/reference_audio
